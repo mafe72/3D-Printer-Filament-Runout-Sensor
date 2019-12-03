@@ -1,5 +1,5 @@
 # 3D Printer Filament Runout Sensor
-This is a low filament detector for your 3d printer. When your filament runs out it will sound the alarm and flash the RGB LED giving you time to pause or reload your filament.
+This is a low filament detector base on the ATtiny13 - 8-bit AVR Microcontroller for your 3d printer. When your filament runs out it will sound the alarm and flash the RGB LED giving you time to pause or reload your filament.
 
 License
 -------
@@ -21,11 +21,13 @@ Features
 
 * Supports Marlin 1.1.X or newer, RepRap and Octoprint 1.3.8 or higher.
 
-* Support custom script filament runout or M600 Gcode if enabled in Marlin
+* Can be daisy-chain using the extension port to handle many filaments simultaneously
 
 * Audio and visual alerts.
 
 * One button operation mode.
+
+* Operational Voltage: 5V
 
 * Compact PCB design (30.62mm x 25.90mm).
 
@@ -87,6 +89,10 @@ Hardware Installation
 If you are using Marlin, use the Z+ endstop port on your 3D printer to install the Filament Runout Sensor, marlin will send M600 gcode to change the filament once the sensor is triggered.
 
 If you have a Raspberry Pi with OctoPrint setup, use the plugin above in order to use this sensor, connected to the raspberry Pi.
+
+### Daisy-chain Configuration
+
+The unit can handle as many filaments simultaneously, on a daisy-chain configuration using the extension port. As soon as one of the sensors run out of filament, the unit will send a message to the next one, up to - your main board.
 
 Basic Hardware Usage
 --------------------
