@@ -57,7 +57,7 @@ Software Configuration
 ----------------------
 ### Marlin Firmware
 
-Modify Configuration.h on Filament Runout Sensors section uncoment the following line:
+Modify Configuration.h on Filament Runout Sensors section uncomment the following line:
 
 		#define FILAMENT_RUNOUT_SENSOR
 			
@@ -73,7 +73,7 @@ Also if you need to invert the logic of the sensor set to <code>true</code> the 
 
 		#define FIL_RUNOUT_INVERTING false
 		
-Modify Configuration_adv.h in the section Advanced Pause, and uncoment the following line:
+Modify Configuration_adv.h in the section Advanced Pause, and uncomment the following line:
 
 		#define ADVANCED_PAUSE_FEATURE
 		
