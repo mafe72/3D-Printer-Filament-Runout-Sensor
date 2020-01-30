@@ -61,7 +61,7 @@ Modify Configuration.h on Filament Runout Sensors section uncoment the following
 
 		#define FILAMENT_RUNOUT_SENSOR
 			
-In this case I used the Z+ Port, therefore you need to set FIL_RUNOUT_PIN in pins_RAMPS.h to 19, add the following line to the block of code:
+In this case I used the Z+ Port, therefore you need to set <code>FIL_RUNOUT_PIN</code> in pins_RAMPS.h to 19, add the following line to the block of code:
 
 		#define FIL_RUNOUT_PIN  19
 			
