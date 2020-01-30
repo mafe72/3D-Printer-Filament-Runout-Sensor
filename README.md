@@ -47,9 +47,11 @@ Features
 
 Prerequisites
 ---------------------
-1. Access to the source code for your existing printer.
+1. Available Z+ endstop port on your 3D printer. 
 
-2. Arduino IDE 1.8 or newer.
+2. Access to the source code for your existing printer.
+
+3. Arduino IDE 1.8 or newer.
 
 Software Configuration
 ----------------------
@@ -106,4 +108,4 @@ Basic Hardware Usage
 
 Basic Maintenance
 -----------------
-This sensor contains a limit switch and dust or debris can cause false or changing readings. Clean dust by blowing on the sensor or disassembly to clean the sensor.
+This sensor contains a limit switch and dust or debris can cause false or changing readings. Clean dust by blowing on the sensor or disassembly to clean the limit switch.
