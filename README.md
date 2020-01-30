@@ -69,18 +69,18 @@ Since the sensor has its own pull-up resisters comment the following line:
 
 		//#define FIL_RUNOUT_PULLUP 
 		
-Also if you need to invert the logic of the sensor set to true the followng line:
+Also if you need to invert the logic of the sensor set to <code>true</code> the following line:
 
 		#define FIL_RUNOUT_INVERTING false
 		
-Modify Configuration_adv.h in the section Advanced Pause, uncoment the following line:
+Modify Configuration_adv.h in the section Advanced Pause, and uncoment the following line:
 
 		#define ADVANCED_PAUSE_FEATURE
 		
+Once done, flash the modified firmware to your printer.
 
 More information about the firmware configuration is available at the official Marlin Documentation [found here.](http://marlinfw.org/docs/configuration/configuration.html#filament-runout-sensor)
 
-Once done, flash the modified firmware to your printer.
 
 ### OctoPrint Plugin
 
@@ -90,11 +90,11 @@ Hardware Installation
 ---------------------
 If you are using Marlin, use the Z+ endstop port on your 3D printer to install the Filament Runout Sensor, marlin will send M600 gcode to change the filament once the sensor is triggered.
 
-If you have a Raspberry Pi with OctoPrint setup, use the plugin above in order to use this sensor, connected to the raspberry Pi.
+If you have a Raspberry Pi with OctoPrint setup, use the plugin above in order to use this sensor, connected to the Raspberry Pi.
 
 ### Daisy-chain Configuration
 
-The unit can handle as many filaments simultaneously, on a daisy-chain configuration using the extension port. As soon as one of the sensors run out of filament, the unit will send a message to the next one, up to - your main board.
+The unit can handle as many filaments simultaneously, on a daisy-chain configuration using the extension port. As soon as one of the sensors run out of filament, the unit will send a message to the next one, up to - your mainboard.
 
 Basic Hardware Usage
 --------------------
