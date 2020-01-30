@@ -57,23 +57,23 @@ Software Configuration
 ----------------------
 ### Marlin Firmware
 
-Modify Configuration.h on Filament Runout Sensors section uncoment the following line.
+Modify Configuration.h on Filament Runout Sensors section uncoment the following line:
 
 		#define FILAMENT_RUNOUT_SENSOR
 			
-In this case I used the Z+ Port, therefore you need to set FIL_RUNOUT_PIN in pins_RAMPS.h to 19, add the following line to the block of code.
+In this case I used the Z+ Port, therefore you need to set FIL_RUNOUT_PIN in pins_RAMPS.h to 19, add the following line to the block of code:
 
 		#define FIL_RUNOUT_PIN  19
 			
-Since the sensor have its own pulup resisters comment the following line: 
+Since the sensor has its own pull-up resisters comment the following line:
 
 		//#define FIL_RUNOUT_PULLUP 
 		
-Also if you need to invert the logic of the sensor set to true the followng line.
+Also if you need to invert the logic of the sensor set to true the followng line:
 
 		#define FIL_RUNOUT_INVERTING false
 		
-Modify Configuration_adv.h in the section Advanced Pause, uncoment the following line.
+Modify Configuration_adv.h in the section Advanced Pause, uncoment the following line:
 
 		#define ADVANCED_PAUSE_FEATURE
 		
