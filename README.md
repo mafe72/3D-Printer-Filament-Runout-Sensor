@@ -78,7 +78,7 @@ Modify Configuration_adv.h in the section Advanced Pause, uncoment the following
 		#define ADVANCED_PAUSE_FEATURE
 		
 
-More information about the Marlin configuration can be [found here.](http://marlinfw.org/docs/configuration/configuration.html#filament-runout-sensor)
+More information about the firmware configuration can be at the official Marlin Documentation [found here.](http://marlinfw.org/docs/configuration/configuration.html#filament-runout-sensor)
 
 Once done, flash the modified firmware to your printer.
 
