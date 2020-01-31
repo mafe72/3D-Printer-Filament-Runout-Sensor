@@ -99,7 +99,7 @@ The following images display the correcnt pin location for the installation for 
 ![rambo](pictures/rambo.png)
 
 * Printrboard Rev B,C,D,E Pinout.
-![printrboard](pictures/printrboard.png)
+![printrboard](pictures/printbrd.png)
 
 If you have a Raspberry Pi with OctoPrint setup, use the plugin above in order to use this sensor, connected to the Raspberry Pi.
 
