@@ -88,9 +88,9 @@ For Raspberry Pi with OctoPrint use this Plugin: [found here.](https://plugins.o
 
 Hardware Installation
 ---------------------
-If you are using Marlin, use the Z+ endstop port on your 3D printer to install the Filament Runout Sensor, marlin will send M600 gcode to change the filament once the sensor is triggered.
+Once the firmware is configured and uploaded to your printer, Marlin will send M600 gcode to change the filament spool once the sensor is triggered.
 
-The following images display the correcnt pin location for the installation for the Filament Runout Sensor.
+The following images display the correct pin location for the installation for the Filament Runout Sensor.
 
 * RAMPS 1.4 Pinout.
 ![ramps](pictures/ramps.png)
