@@ -61,7 +61,7 @@ Modify Configuration.h on Filament Runout Sensors section uncomment the followin
 
 		#define FILAMENT_RUNOUT_SENSOR
 			
-In this case I used the Z+ Port, therefore you need to set <code>FIL_RUNOUT_PIN</code> in pins_RAMPS.h to 19, add the following line to the block of code:
+In this case, I used the Z+ Port on a RAMPS Board (see other boards pinout on the Hardware Section), therefore you need to set <code>FIL_RUNOUT_PIN</code> in pins_RAMPS.h to 19, add the following line to the block of code:
 
 		#define FIL_RUNOUT_PIN  19
 			
@@ -89,6 +89,17 @@ For Raspberry Pi with OctoPrint use this Plugin: [found here.](https://plugins.o
 Hardware Installation
 ---------------------
 If you are using Marlin, use the Z+ endstop port on your 3D printer to install the Filament Runout Sensor, marlin will send M600 gcode to change the filament once the sensor is triggered.
+
+The following images display the correcnt pin location for the installation for the Filament Runout Sensor.
+
+* RAMPS 1.4 Pinout.
+![ramps](pictures/ramps.png)
+
+* RAMBo 1.2 Pinout.
+![rambo](pictures/rambo.png)
+
+* Printrboard Rev B,C,D,E Pinout.
+![printrboard](pictures/printrboard.png)
 
 If you have a Raspberry Pi with OctoPrint setup, use the plugin above in order to use this sensor, connected to the Raspberry Pi.
 
