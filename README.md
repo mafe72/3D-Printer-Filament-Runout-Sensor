@@ -105,7 +105,7 @@ If you have a Raspberry Pi with OctoPrint setup, use the plugin above in order t
 
 ### Daisy-chain Configuration
 
-The unit can handle as many filaments simultaneously, on a daisy-chain configuration using the extension port. As soon as one of the sensors run out of filament, the unit will send a message to the next one, up to - your mainboard.
+This sensor can also be daisy-chain to handle as many extruders you have on your 3D printer and manage the filament spools independently if any of your filaments run out, Marlin will get notified as the sensor gets trigger and pause your printer without any additional configuration and using only the Z+ port on your board.
 
 Basic Hardware Usage
 --------------------
