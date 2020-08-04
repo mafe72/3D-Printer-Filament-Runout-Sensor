@@ -1,8 +1,6 @@
 # 3D Printer Filament Runout Sensor
 This is a low filament detector base on the ATtiny13 - 8-bit AVR Microcontroller for your 3d printer. When your filament runs out it will sound the alarm and flash the RGB LED and with the proper firmware modifications and GCode, will pause your printer giving you time reload your filament.
 
-Watch the video
-
 [![Watch the demo video](https://mini-mods.com/wp-content/uploads/2020/01/video_shot.png)](https://www.youtube.com/embed/Nork3BS47Sg)
 
 License
