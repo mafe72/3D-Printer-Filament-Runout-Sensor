@@ -55,7 +55,7 @@ Prerequisites
 
 3. Arduino IDE 1.8 or newer to edit your printer’s firmware.
 
-Software Configuration
+Firmware Configuration
 ----------------------
 ### Marlin Firmware
 
