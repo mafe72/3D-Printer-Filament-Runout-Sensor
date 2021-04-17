@@ -14,7 +14,7 @@ Features
 --------
 * Detect filament diameter of 1.75mm, 2.85mm and 3.00mm.
 
-* Can be used stand-alone (Advanced features will not be available)
+* Can be used stand-alone with out firmware modifications (Advanced features will not be available)
 
 * Can interface with a variety of 3D Printer Controller Board to use Advanced features including:
 	- RAMPS 1.2 and newer
