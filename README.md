@@ -94,6 +94,8 @@ This sensor works with all available materials and is fully compatible with the 
 
 Once the firmware is configured and uploaded to your printer, Marlin will send M600 gcode to change the filament spool once the sensor gets triggered.
 
+If you have a Raspberry Pi with OctoPrint setup, use the plugin above in order to use this sensor, connected to the Raspberry Pi.
+
 ### Stand-alone Configuration
 
 The 3D Printer Filament Runout Sensor can also be used stand-alone, without the 3D printer’s firmware modification by connecting the sensor to an available Z+ endstop port on your 3D printer, this will enable the audio and visual notifications but will not pause the printer to perform the filament reload.
@@ -114,8 +116,6 @@ The following images display the correct pin location for the installation for t
 
 * Printrboard Rev B,C,D,E Pinout.
 ![printrboard](pictures/printbrd.png)
-
-If you have a Raspberry Pi with OctoPrint setup, use the plugin above in order to use this sensor, connected to the Raspberry Pi.
 
 Basic Hardware Usage
 --------------------
