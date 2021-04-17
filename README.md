@@ -90,7 +90,9 @@ For Raspberry Pi with OctoPrint use this Plugin: [found here.](https://plugins.o
 
 Hardware Installation
 ---------------------
-This sensor works with all available materials and is fully compatible with the 3D Printer boards listed below to take advantage of the advanced features of the sensor, an available Z+ endstop port is required to interface with the 3D printer, with the correct firmware modification and settings, the sensor will pause the printing until the operator reloads the filament and resume the process.
+This sensor works with all available materials and is fully compatible with the 3D Printer boards listed below to take advantage of the advanced features of the sensor, an available Z+ endstop port is required to interface with the 3D printer.
+
+Once the firmware is configured and uploaded to your printer, Marlin will send M600 gcode to change the filament spool once the sensor gets triggered.
 
 ### Stand-alone Configuration
 
@@ -100,7 +102,7 @@ The 3D Printer Filament Runout Sensor can also be used stand-alone, without the 
 
 This sensor can also be daisy-chain, this feature requires modification of your 3D printer’s firmware to handle as many extruders you have on your 3D printer and manage the filament spools independently if any of your filaments run out, Marlin will get notified as the sensor gets trigger and pause your printer using only the Z+ port on your board.
 
-Once the firmware is configured and uploaded to your printer, Marlin will send M600 gcode to change the filament spool once the sensor is triggered.
+### Mainboard pin location
 
 The following images display the correct pin location for the installation for the Filament Runout Sensor.
 
