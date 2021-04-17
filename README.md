@@ -1,7 +1,9 @@
 # 3D Printer Filament Runout Sensor
-This is a low filament detector base on the ATtiny13 - 8-bit AVR Microcontroller for your 3d printer. When your filament runs out it will sound the alarm and flash the RGB LED and with the proper firmware modifications and GCode, will pause your printer giving you time reload your filament.
+This is a low filament detector base on the ATtiny13 – 8-bit AVR Microcontroller compatible with all 3d printers. When the filament runs out the sensor will sound the alarm and flash the RGB LED; with the proper firmware modifications and GCode, the sensor will pause your printer giving you time to reload your filament.
 
 [![Watch the demo video](pictures/video_shot.png)](https://www.youtube.com/embed/Nork3BS47Sg)
+
+This sensor works with all available materials and is fully compatible with the 3D Printer boards listed below to take advantage of the advanced features of the sensor, an available Z+ endstop port is required to interface with the 3D printer, with the correct firmware modification and settings, the sensor will pause the printing until the operator reloads the filament and resume the process.
 
 License
 -------
@@ -53,7 +55,7 @@ Prerequisites
 
 2. Access to the source code for your existing printer.
 
-3. Arduino IDE 1.8 or newer.
+3. Arduino IDE 1.8 or newer to edit your printer’s firmware.
 
 Software Configuration
 ----------------------
@@ -90,6 +92,16 @@ For Raspberry Pi with OctoPrint use this Plugin: [found here.](https://plugins.o
 
 Hardware Installation
 ---------------------
+This sensor works with all available materials and is fully compatible with the 3D Printer boards listed below to take advantage of the advanced features of the sensor, an available Z+ endstop port is required to interface with the 3D printer, with the correct firmware modification and settings, the sensor will pause the printing until the operator reloads the filament and resume the process.
+
+### Stand-alone Configuration
+
+The 3D Printer Filament Runout Sensor can also be used stand-alone, without the 3D printer’s firmware modification by connecting the sensor to an available Z+ endstop port on your 3D printer, this will enable the audio and visual notifications but will not pause the printer to perform the filament reload.
+
+### Daisy-chain Configuration
+
+This sensor can also be daisy-chain, this feature requires modification of your 3D printer’s firmware to handle as many extruders you have on your 3D printer and manage the filament spools independently if any of your filaments run out, Marlin will get notified as the sensor gets trigger and pause your printer using only the Z+ port on your board.
+
 Once the firmware is configured and uploaded to your printer, Marlin will send M600 gcode to change the filament spool once the sensor is triggered.
 
 The following images display the correct pin location for the installation for the Filament Runout Sensor.
@@ -105,10 +117,6 @@ The following images display the correct pin location for the installation for t
 
 If you have a Raspberry Pi with OctoPrint setup, use the plugin above in order to use this sensor, connected to the Raspberry Pi.
 
-### Daisy-chain Configuration
-
-This sensor can also be daisy-chain to handle as many extruders you have on your 3D printer and manage the filament spools independently if any of your filaments run out, Marlin will get notified as the sensor gets trigger and pause your printer without any additional configuration and using only the Z+ port on your board.
-
 Basic Hardware Usage
 --------------------
 1.- When the filament is loaded the Green led will indicate normal operation.
@@ -121,4 +129,4 @@ Basic Hardware Usage
 
 Basic Maintenance
 -----------------
-This sensor contains a limit switch and dust or debris can cause false or changing readings. Clean dust by blowing on the sensor or disassembly to clean the limit switch.
+This sensor contains a limit switch and dust or debris can cause false or changing readings. Clean dust by blowing on the sensor or disassembly to clean the limit switch. Monitor wear and tear of the 3D printer sensor's enclosure as this can cause false positives triggering the sensor.
