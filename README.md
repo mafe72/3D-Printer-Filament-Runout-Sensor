@@ -3,8 +3,6 @@ This is a low filament detector base on the ATtiny13 – 8-bit AVR Microcontroll
 
 [![Watch the demo video](pictures/video_shot.png)](https://www.youtube.com/embed/Nork3BS47Sg)
 
-This sensor works with all available materials and is fully compatible with the 3D Printer boards listed below to take advantage of the advanced features of the sensor, an available Z+ endstop port is required to interface with the 3D printer, with the correct firmware modification and settings, the sensor will pause the printing until the operator reloads the filament and resume the process.
-
 License
 -------
 <div align="center"><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Attribution-NonCommercial-ShareAlike" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /></div>
@@ -14,20 +12,20 @@ the Creative Commons Foundation (https://creativecommons.org/licenses/by-nc-sa/4
 
 Features
 --------
-* Low filament detector for your 3d printer.
-
 * Detect filament diameter of 1.75mm, 2.85mm and 3.00mm.
 
-* Can interface with a variety of 3D Printer Controller Board including:
+* Can be used stand-alone (Advanced features will not be available)
+
+* Can interface with a variety of 3D Printer Controller Board to use Advanced features including:
 	- RAMPS 1.2 and newer
 	- RAMBo 1.2 and newer
 	- Printrboard Rev B,C,D,E
 
 * Supports Marlin 1.1.X or newer, RepRap and Octoprint 1.3.8 or higher.
 
-* Can be daisy-chain using the extension port to handle many filaments simultaneously
+* Can be daisy-chain using the extension port to simultaneously handle multi-extruder 3D printers
 
-* Audio and visual alerts.
+* Audio (44dB @ 10Ft) and visual alerts.
 
 * One button operation mode.
 
