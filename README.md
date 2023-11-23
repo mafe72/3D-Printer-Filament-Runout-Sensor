@@ -1,4 +1,7 @@
 # 3D Printer Filament Runout Sensor
+
+![GitHub issues](https://img.shields.io/github/issues-raw/mafe72/3D-Printer-Filament-Runout-Sensor?logo=Github&style=for-the-badge)
+
 This is a low filament detector base on the ATtiny13 – 8-bit AVR Microcontroller compatible with all 3d printers. When the filament runs out the sensor will sound the alarm and flash the RGB LED; with the proper firmware modifications and GCode, the sensor will pause your printer giving you time to reload your filament.
 
 [![Watch the demo video](pictures/video_shot.png)](https://www.youtube.com/embed/Nork3BS47Sg)
